@@ -1,116 +1,93 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Fullstack 2025</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+    <link rel="stylesheet" href="stilo.css">
   </head>
 
   <body>
-    <h1>Formación FullStack <3</h1>
-    <p>Hola!</p>
-    
-<!--
+    <header>
+      <h1>Formación FullStack 💻</h1>
+      <p>Bienvenido al curso de desarrollo Fullstack 2025. Aprenderás HTML, CSS, JavaScript y más.</p>
+    </header>
 
-Ejercicios <3
+    <!-- Menú de navegación -->
+    <nav>
+      <ul>
+        <li><a href="https://www.w3schools.com/html/">HTML</a></li>
+        <li><a href="https://www.w3schools.com/css/">CSS</a></li>
+        <li>
+          <a href="https://www.w3schools.com/js/">JavaScript</a>
+          <ul>
+            <li><a href="https://www.w3schools.com/js/js_intro.asp">Introducción</a></li>
+            <li><a href="https://www.w3schools.com/js/js_examples.asp">Ejemplos</a></li>
+            <li><a href="https://www.w3schools.com/js/js_exercises.asp">Ejercicios</a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
 
-1) Agregar un heading nivel 2, y 2 parrafos.
-2) Crear una ordered list con 3 items.
-3) Crear una unordered list con 3 items.
-4) Crear 2 <div>, dentro de cada div: agregar una imagen, un h2 para mostrar un titulo para esa imagen y un <p> con breve descripcion.
-5) Crear 3 enlaces/links apuntando a sitios diferentes.
-6) Crear menú de navegación <nav> usando una unordered list <ul> que contenga 3 items con links cada uno.
-7) Crear un form con un input tipo texto, que tenga placeholder Buscar y un botón que diga Buscar. 
-8) Agregar al form, un input tipo texto para Nombre.
-9) Agregar al form, un textarea para Descripción.
-10) Crear footer que contenga el siguiente párrafo: &copy; 2024 Fullstack.
-11) Plus: agregar placeholders en los inputs y textarea
-12) Plus: agregar labels y ids para input y textarea.
-13) Plus: agregar 3 items más, dentro de un item de la <nav>, usando <ul> y <li>
-14) Plus: agregar 2 inputs más con labels y ids que elijan.
+    <!-- Contenido principal -->
+    <main>
+      <h2>Objetivos del curso</h2>
+      <p>Aprender las bases del desarrollo web desde cero.</p>
+      <p>Practicar con proyectos reales y ejercicios progresivos.</p>
 
-Más práctica y ejercicios online en: https://www.w3schools.com/html/html_exercises.asp
-    
-Documentación: 
-  https://www.w3schools.com/html/html_intro.asp
-  https://developer.mozilla.org/es/docs/Learn/HTML/Introduction_to_HTML
+      <h3>Temas del curso</h3>
+      <ul>
+        <li>HTML básico y avanzado</li>
+        <li>CSS y diseño responsive</li>
+        <li>JavaScript y lógica de programación</li>
+      </ul>
 
+      <ol>
+        <li>Introducción al entorno de desarrollo</li>
+        <li>Creación de páginas web completas</li>
+        <li>Aplicaciones dinámicas con JS</li>
+      </ol>
 
+      <!-- Dos imágenes con texto -->
+      <div>
+        <h2>HTML</h2>
+        <img src="https://www.w3schools.com/html/img_girl.jpg" alt="Ejemplo HTML" width="200">
+        <p>El lenguaje base de toda la web, usado para estructurar contenido.</p>
+      </div>
 
-Ejercicios CSS <3
-    
-Documentación CSS en: https://www.w3schools.com/css/default.asp
-Documentación Fonts: https://www.w3schools.com/css/css_font_google.asp 
-Práctica y ejercicios online: https://www.w3schools.com/css/exercise.asp
+      <div>
+        <h2>CSS</h2>
+        <img src="https://www.w3schools.com/css/img_lights.jpg" alt="Ejemplo CSS" width="200">
+        <p>Permite dar estilo y color a los sitios web, haciendo que se vean increíbles.</p>
+      </div>
 
+      <!-- Formulario -->
+      <form action="#" method="get">
+        <label for="buscar">Buscar:</label>
+        <input type="text" id="buscar" placeholder="Buscar..." />
 
-Ejercicio 1: 
-Aplicar color de fondo del cuerpo (body).
-Aplicar color de texto del título <h1>.
-Aplicar colores a los párrafos.
+        <button type="submit">Buscar</button>
 
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" placeholder="Tu nombre..." />
 
-Ejercicio 2: Estilos de fuentes
-Cambiar la fuente del título <h1> a Arial.
-Cambiar el tamaño de la fuente del párrafo a 18px.
-Plus: Agregar otra fuente de https://fonts.google.com/ y usarla en algún párrafo.
+        <label for="descripcion">Descripción:</label>
+        <textarea id="descripcion" placeholder="Escribe una breve descripción..."></textarea>
 
+        <!-- Plus: más inputs -->
+        <label for="email">Email:</label>
+        <input type="email" id="email" placeholder="ejemplo@mail.com" />
 
-Ejercicio 3: Bordes y márgenes
-Aplicar un borde sólido de 1px de color claro a un párrafo (<p>).
-Aumentar el margen superior del título <h1> a 20px.
-Agregar un padding de 10px alrededor del contenido del párrafo.
+        <label for="edad">Edad:</label>
+        <input type="number" id="edad" placeholder="Tu edad" />
+      </form>
+    </main>
 
-
-Ejercicio 4: Estilos en botón
-Cambiar el color de fondo del botón a verde (#28a745) y el color del texto a blanco.
-Agregar bordes redondeados (border-radius) de 5px.
-Agregar padding 10px.
-Aplicar ancho del botón a 100px.
-Establecer margen superior e inferior de 10px.
-Quitar el color del borde del botón.
-
-
-Ejercicio 5: Inputs del formulario
-Agregar padding de 5px.
-Quitar bordes.
-Agregar márgenes superiores e inferiores de 5px entre cada control
-Plus: Aplicar un tipo de fuente para los labels de cada control.
-Plus: Aplicar width y height al textarea. Ejemplo: 300px ancho y 100px alto.
-
-
-Ejercicio 6: Footer
-Aplicar color de fondo.
-Cambiar color del texto del footer.
-Agregar padding de 20px.
-Alinear texto al centro.
-
-
-Ejercicio 7: Header
-Crear etiqueta header con un texto.
-Aplicar color de fondo y color de texto.
-Agregar padding de 50px.
-Alinear textos al centro.
-
-
-Ejercicio 8: Nav menu
-Aplicar color de fondo a la etiqueta nav y color de texto.
-Eliminar las bullets de la <ul> con: list-style: none;
-En cada item <li>, agregar padding 10px y aplicar display: inline-block; para mostrar los elementos en línea.
-Plus: Ocultar el submenu (ul dentro del li) con display: none;
-
-
-Ejercicio 9: Diseño responsive - Media queries
-Agregar media queries para que el color de fondo del body tenga un color diferente en distintas pantallas. 
-Ejemplos: @media screen and (min-width: 768px) {}
-@media screen and (min-width: 1280px) {}
-
-
-
-
--->
-
+    <!-- Footer -->
+    <footer>
+      <p>&copy; 2024 Fullstack. Todos los derechos reservados.</p>
+    </footer>
   </body>
 </html>
